@@ -1,1 +1,1 @@
-# webviewer-angular-sample-annot-user
+# webviewer-angular-sample-drop-issue
