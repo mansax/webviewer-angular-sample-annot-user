@@ -29,9 +29,9 @@ export class AppComponent implements OnInit, AfterViewInit {
 
       const { annotationManager } = instance.Core;
 
-      console.log('Current User before setting it', annotationManager.getCurrentUser());
+      console.log('Current User 1', annotationManager.getCurrentUser());
       annotationManager.setCurrentUser('TEST');
-      console.log('Current User after setting it', annotationManager.getCurrentUser());
+      console.log('Current User 2', annotationManager.getCurrentUser());
     });
   }
 
@@ -43,8 +43,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   setCurrentUser() {
-    console.log('SETTING USER VIA BUTTON');
     this.wvInstance.Core.annotationManager.setCurrentUser('BUTTON-TEST');
+    console.log('Current User 3', this.wvInstance.Core.annotationManager.getCurrentUser());
   }
 
 }
